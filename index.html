@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Expenses APP</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Учет расходов</h1>
+        <div class="container-inp-btn">
+            <div class="wrapper-input">
+                <input class="js-input" type="number" placeholder="12345">
+            </div>
+            <div class="wrapper-btn">
+                <button class="js-btn">Добавить</button>
+            </div>
+        </div>
+        <div class="container-all">
+            <div class="container-lim-tot-state">
+                <div class="wrapper-limt">
+                    <h1>Лимит: <p>1000 руб.</p></h1>
+                </div>
+                <div class="wrapper-total">
+                    <h1>Всего: <p class="js-total total">Здесь пока пусто...</p></h1>
+                </div>
+                <div class="wrapper-state">
+                    <h1>Статус: <p class="js-state state">Здесь пока пусто...</p></h1>
+                </div>
+            </div>
+            <div class="container-history">
+                <h1>История:</h1>
+                <div class="js-history wrapper-history">
+                    <p>Здесь пока пусто...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
