@@ -31,6 +31,10 @@ button{
     cursor: pointer;
 }
 
+li{
+    margin-top: 8px;
+}
+
 .main-container{
     width: 700px;
     margin: 0 auto;
