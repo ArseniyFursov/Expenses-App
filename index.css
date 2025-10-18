@@ -36,7 +36,7 @@ li{
 }
 
 .main-container{
-    width: 700px;
+    width: 1000px;
     margin: 0 auto;
     margin-top: 67px;
 }
@@ -49,6 +49,7 @@ li{
 }
 
 .wrapper-input{
+    position: relative;
     width: calc(55% - 14px);
     height: 58px;
 }
@@ -65,14 +66,177 @@ li{
     flex-wrap: wrap;
 }
 
-.wrapper-limt{
+.container-lim-tot-state{
+    width: calc(55% - 15px);
+}
+
+.wrapper-limit-btn{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 13px;
+}
+
+.wrapper-limt{
+    width: calc(80% - 7px);
+}
+
+.wrapper-change-limit{
+    position: relative;
+    top:-10px;
+    width: calc(20% - 7px);
+    height: 42px;
+}
+
+.change-limit{
+    width: 42px;
+    height: 42px;
+    padding: 0 0;
+    background-color: transparent;
+    background-image: url('change-limit.png');
 }
 
 .wrapper-total{
     margin-bottom: 35px;
 }
 
+.container-history{
+    width: calc(45% - 15px);
+}
+
 .wrapper-history{
     margin-top: 13px
+}
+
+.limit_ok{
+    color: #039100;
+}
+
+.limit_bad{
+    color: #FC0000;
+}
+.limit_null{
+    color: rgb(0, 0, 0);
+}
+
+.wrapper-btn-clear{
+    margin-top: 112px;
+    width: 100%;
+    height: 58px;
+}
+
+.btn-clear{
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.input-expense {
+    padding-right: 85px; 
+}
+
+.wrapper-input::after {
+    content: 'руб.';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 65px;
+    height: 39px;
+    color: gray;
+    pointer-events: none; 
+    transform: translateY(-50%);
+}
+
+.expense-type {
+    margin-top: 18px;
+    box-sizing: border-box;
+    width: 536px;
+    height: 58px;
+    font-size: 32px;
+    border: solid 1px;
+}
+
+/* POPUP */
+.body-fixed{
+    overflow: hidden;
+}
+
+.container-popup{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+}
+
+.popup-open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.wrapper-popup{
+    position: relative;
+    width: 991px;
+    height: 525px;
+    background-color: #FFFFFF;
+}
+
+.wrapper-newlimit-h1{
+    margin: 57px 47px;
+    width: 304px;
+}
+
+.wrapper-close-popup{
+    position: absolute;
+    right: 35px;
+    top: 39px;
+    width: 30px;
+    height: 30px;
+}
+
+.close-popup{
+    height: 30px;
+    padding: 0 0;
+    background-color: transparent;
+    background-image: url('close-btn.png');
+}
+
+.cont-main{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 57px;
+}
+
+.wrapper-input-newlimit{
+    position: relative;
+    width: 484px;
+}
+
+.newlimit{
+    padding-right: 85px; 
+}
+
+.wrapper-input-newlimit::after{
+    content: 'руб.';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 65px;
+    height: 39px;
+    color: gray;
+    pointer-events: none; 
+    transform: translateY(-50%);
+}
+
+.wrapper-btn-newlimit{
+    width: 370px;
 }
