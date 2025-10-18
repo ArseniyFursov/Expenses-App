@@ -9,26 +9,58 @@
     <title>Expenses APP</title>
 </head>
 <body>
+    <div class="js-popup container-popup">
+        <div class="js-popup-content wrapper-popup">
+            <div class="wrapper-newlimit-h1">
+                <h1 class="new-limit-h1">Новый лимит</h1>
+            </div>
+            <div class="wrapper-close-popup">
+                <button class="js-close-popup close-popup"></button>
+            </div>
+            <div class="cont-main">
+                <div class="wrapper-input-newlimit">
+                    <input type="number" class="js-input-limit newlimit" placeholder="12345">
+                </div>
+                <div class="wrapper-btn-newlimit">
+                    <button class="js-btn-new-limit btn-newlimit">Задать лимит</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="main-container">
         <h1>Учет расходов</h1>
         <div class="container-inp-btn">
             <div class="wrapper-input">
-                <input class="js-input" type="number" placeholder="12345">
+                <input class="js-input input-expense" type="number" placeholder="12345">
             </div>
             <div class="wrapper-btn">
                 <button class="js-btn">Добавить</button>
             </div>
         </div>
+        <select class="js-type-expense expense-type">
+            <option>кафе и рестораны</option>
+            <option>транспорт</option>
+            <option>аптека</option>
+            <option>развлечения</option>
+        </select>
         <div class="container-all">
             <div class="container-lim-tot-state">
-                <div class="wrapper-limt">
-                    <h1>Лимит: <p class="limit">1000 руб.</p></h1>
+                <div class="wrapper-limit-btn">
+                    <div class="wrapper-limt">
+                        <h1>Лимит: <p class="limit">1000</p> <p>руб.</p></h1>
+                    </div>
+                    <div class="wrapper-change-limit">
+                        <button class="js-btn-popup change-limit"></button>
+                    </div>
                 </div>
                 <div class="wrapper-total">
                     <h1>Всего: <p class="js-total total">Здесь пока пусто...</p></h1>
                 </div>
                 <div class="wrapper-state">
                     <h1>Статус: <p class="js-state state">Здесь пока пусто...</p></h1>
+                </div>
+                <div class="wrapper-btn-clear">
+                    <button class="js-btn-clear btn-clear">Сбросить расходы</button>
                 </div>
             </div>
             <div class="container-history">
