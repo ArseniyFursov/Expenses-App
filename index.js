@@ -38,10 +38,11 @@ btnChangeLimitNode.addEventListener('click', function() {
     if (!newLimit) {
         return;
     }
+    limmitNode.innerHTML = `${newLimit}`;
     clearInputLimit();
     closePupup();
     bodyFixedNode.classList.remove(bodyClassFixed);
-    limmitNode.innerHTML = `${newLimit} ${currents}`;
+    renderStatus(sum);
 });
 
 btnClosePopupNode.addEventListener('click', function() {
@@ -144,9 +145,11 @@ function renderStatus(sum) {
         
         stateNode.innerHTML = status_in_limit;
         stateNode.classList.add(status_in_limit_green);
+        stateNode.classList.remove(status_out_of_limit_red);
     } else {
         stateNode.innerHTML = status_out_of_limit + ` (-${stateBad})`;
         stateNode.classList.add(status_out_of_limit_red);
+        stateNode.classList.remove(status_in_limit_green);
     }
 };
 
